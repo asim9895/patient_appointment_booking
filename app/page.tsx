@@ -3,9 +3,9 @@ import PatientForm from "@/components/forms/PatientForm";
 import Image from "next/image";
 import Link from "next/link";
 
-
 const MainPage = async ({ searchParams }: SearchParamProps) => {
   const is_admin = searchParams?.admin === "true";
+  console.log(process.env.NEXT_PUBLIC_PASS_KEY);
   return (
     <div className="flex h-screen max-h-screen">
       {/* TODO: OTP verfication */}
